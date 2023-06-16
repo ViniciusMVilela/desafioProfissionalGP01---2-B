@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../views/css/veiculos.css" />
+    <link rel="Website Icon" href="../../views/img/logoInteira.png" />
+    <title>Veículos - FrotaFácil</title>
+  </head>
+  <body>
+    <header>
+      <div class="left">
+        <h3>FrotaFácil</h3>
+      </div>
+      <div class="right">
+        <p class="text-right">EMP: PMM</p>
+        <p class="text-right">SECT: IPPLAM</p>
+      </div>
+    </header>
+    <div class="div-pai">
+      <div class="div-filha1">
+        <div class="sidebar">
+          <div class="identificacao-user">
+            <img
+              src="../../views/img/teste_perfil-removebg-preview.png"
+              id="img-user"
+            />
+            <h2>Adm</h2>
+          </div>
+          <a href="./inicialAdm.html"
+            ><ion-icon name="home-outline"></ion-icon><span>Início</span></a
+          >
+          <a href="./listaReservas.html"
+            ><ion-icon name="navigate-outline"></ion-icon
+            ><span>Locações</span></a
+          >
+          <a href="#"
+            ><ion-icon name="car-outline"></ion-icon><span>Veículos</span></a
+          >
+          <a href="./colaboradores.html"
+            ><ion-icon name="people-outline"></ion-icon
+            ><span>Colaboradores</span></a
+          >
+          <a href="./contas.html"
+            ><ion-icon name="card-outline"></ion-icon><span>Contas</span></a
+          >
+          <a href="./calendario.html"
+            ><ion-icon name="calendar-outline"></ion-icon
+            ><span>Calendário</span></a
+          >
+          <a href="#"
+            ><ion-icon name="settings-outline"></ion-icon
+            ><span>Configuração</span></a
+          >
+          <a href="../../pages/login.html"
+            ><ion-icon name="log-out-outline"></ion-icon><span>Sair</span></a
+          >
+        </div>
+      </div>
+      <div class="div-filha2">
+        <div id="mapa">
+          <section id="tabela">
+            <h1>Veículos</h1>
+            <input
+              type="text"
+              name="filtro"
+              id="filtrar-tabela"
+              placeholder="Digite o ID do veículo"
+            />
+            <button id="new-travel">Checklists</button>
+            <table>
+              <thead>
+                <tr>
+                  <th>ID</th>
+                  <th>Nome</th>
+                  <th>Placa</th>
+                  <th>Cor</th>
+                  <th>Status</th>
+                  <th>Ano</th>
+                  <th>Data última revisão</th>
+                  <th>Último Uso</th>
+                </tr>
+              </thead>
+              <tbody id="tabela-dadoss">
+                <tr class="dados">
+                  <td class="info-filtro">001</td>
+                  <td class="info">Fiat Uno 1.0 Gasolina</td>
+                  <td class="info">AYC-7894</td>
+                  <td class="info">Branco</td>
+                  <td class="info">Parado</td>
+                  <td class="info">2010</td>
+                  <td class="info">15/12//2022</td>
+                  <td class="info">10/05/2023</td>
+                </tr>
+
+                <tr class="dados uso">
+                  <td class="info-filtro">002</td>
+                  <td class="info">Gol 1.0 Gasolina</td>
+                  <td class="info">DEF-5694</td>
+                  <td class="info">Branco</td>
+                  <td class="info">Em Uso</td>
+                  <td class="info">2015</td>
+                  <td class="info">20/11/2021</td>
+                  <td class="info">05/01/2023</td>
+                </tr>
+                <tr class="dados uso">
+                  <td class="info-filtro">003</td>
+                  <td class="info">Onix 1.4 Flex</td>
+                  <td class="info">GHI-9031</td>
+                  <td class="info">Branco</td>
+                  <td class="info">Em uso</td>
+                  <td class="info">2018</td>
+                  <td class="info">28/02/2023</td>
+                  <td class="info">20/04/2023</td>
+                </tr>
+                <tr class="dados revisao">
+                  <td class="info-filtro">004</td>
+                  <td class="info">Fiesta 1.4 Gasolina</td>
+                  <td class="info">JKL-6491</td>
+                  <td class="info">Branco</td>
+                  <td class="info">Mecânica</td>
+                  <td class="info">2012</td>
+                  <td class="info">10/08/2022</td>
+                  <td class="info">20/12/2022</td>
+                </tr>
+
+                <tr class="dados">
+                  <td class="info-filtro">005</td>
+                  <td class="info">Sandero 1.0 Gasolina</td>
+                  <td class="info">MNO-8524</td>
+                  <td class="info">Branco</td>
+                  <td class="info">Parado</td>
+                  <td class="info">2014</td>
+                  <td class="info">18/07/2022</td>
+                  <td class="info">20/09/2022</td>
+                </tr>
+
+                <tr class="dados uso">
+                  <td class="info-filtro">006</td>
+                  <td class="info">Corolla 1.6 Flex</td>
+                  <td class="info">PQR-2017</td>
+                  <td class="info">Branco</td>
+                  <td class="info">Em uso</td>
+                  <td class="info">2019</td>
+                  <td class="info">30/02/2023</td>
+                  <td class="info">28/05/2023</td>
+                </tr>
+                <tr class="dados revisao">
+                  <td class="info-filtro">007</td>
+                  <td class="info">Civic 1.6 Gasolina</td>
+                  <td class="info">STU-5491</td>
+                  <td class="info">Branco</td>
+                  <td class="info">Mecânica</td>
+                  <td class="info">2017</td>
+                  <td class="info">05/11/2022</td>
+                  <td class="info">30/01/2023</td>
+                </tr>
+                <tr class="dados uso">
+                  <td class="info-filtro">008</td>
+                  <td class="info">HB20 1.4 Gasolina</td>
+                  <td class="info">VWX-9517</td>
+                  <td class="info">Branco</td>
+                  <td class="info">Em uso</td>
+                  <td class="info">2013</td>
+                  <td class="info">15/02/2023</td>
+                  <td class="info">14/06/2023</td>
+                </tr>
+                <tr class="dados">
+                  <td class="info-filtro">009</td>
+                  <td class="info">Palio 1.0 Gasolina</td>
+                  <td class="info">YZA-2697</td>
+                  <td class="info">Branco</td>
+                  <td class="info">Parado</td>
+                  <td class="info">2013</td>
+                  <td class="info">25/08/2022</td>
+                  <td class="info">18/03/2023</td>
+                </tr>
+                <tr class="dados uso">
+                  <td class="info-filtro">010</td>
+                  <td class="info">Fox 1.4 Gasolina</td>
+                  <td class="info">BCD-5698</td>
+                  <td class="info">Branco</td>
+                  <td class="info">Em uso</td>
+                  <td class="info">2016</td>
+                  <td class="info">18/09/2021</td>
+                  <td class="info">21/06/2022</td>
+                </tr>
+                <tr class="dados revisao">
+                  <td class="info-filtro">011</td>
+                  <td class="info">Focus 1.4 Gasolina</td>
+                  <td class="info">XCV-9128</td>
+                  <td class="info">Branco</td>
+                  <td class="info">Mecânica</td>
+                  <td class="info">2011</td>
+                  <td class="info">25/11/2022</td>
+                  <td class="info">26/01/2023</td>
+                </tr>
+
+                <tr class="dados revisao">
+                  <td class="info-filtro">012</td>
+                  <td class="info">Logan 1.0 Flex</td>
+                  <td class="info">AFG-6487</td>
+                  <td class="info">Branco</td>
+                  <td class="info">Mecânica</td>
+                  <td class="info">2019</td>
+                  <td class="info">04/12/2022</td>
+                  <td class="info">18/02/2023</td>
+                </tr>
+              </tbody>
+            </table>
+            <span id="erro-ajax" class="invisivel"
+              >Erro ao buscar os dadoss</span
+            >
+          </section>
+        </div>
+      </div>
+    </div>
+    <!-- </main> -->
+    <script src="../../script/filtro.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../views/css/calendario.css">
+    <link rel="Website Icon" href="../../views/img/logoInteira.png" />
+    <title>Calendário - FrotaFácil</title>
+</head>
+<body>
+    <header>
+        <div class="left">
+          <h3>FrotaFácil</h3>
+        </div>
+        <div class="right">
+          <p class="text-right">EMP: PMM</p>
+          <p class="text-right">SECT: IPPLAM</p>
+        </div>
+      </header>
+      <!-- <main> -->
+      <div class="div-pai">
+        <div class="div-filha1">
+          <div class="sidebar">
+            <div class="identificacao-user">
+              <img src="../../views/img/teste_perfil-removebg-preview.png"  id="img-user" />
+              <h2>Adm</h2>
+            </div>
+            <a href="./inicialAdm.html"
+              ><ion-icon name="home-outline"></ion-icon><span>Início</span></a
+            >
+            <a href="./listaReservas.html"
+              ><ion-icon name="navigate-outline"></ion-icon><span>Locações</span></a
+            >
+            <a href="./veiculos.html"
+              ><ion-icon name="car-outline"></ion-icon><span>Veículos</span></a
+            >
+            <a href="./colaboradores.html"
+              ><ion-icon name="people-outline"></ion-icon
+              ><span>Colaboradores</span></a
+            >
+            <a href="./contas.html"
+              ><ion-icon name="card-outline"></ion-icon><span>Contas</span></a
+            >
+            <a href="#"
+              ><ion-icon name="calendar-outline"></ion-icon
+              ><span>Calendário</span></a
+            >
+            <a href="#"
+              ><ion-icon name="settings-outline"></ion-icon
+              ><span>Configuração</span></a
+            >
+            <a href="../../pages/login.html"
+              ><ion-icon name="log-out-outline"></ion-icon><span>Sair</span></a
+            >
+          </div>
+        </div>
+        <div class="div-filha2">
+         
+          <div id="mapa">
+            <h1>Calendário</h1>
+            <div class="wraper">
+              <h2>Junho</h2>
+              <div class="days-week">
+                  <span>Seg</span>
+                  <span>Ter</span>
+                  <span>Qua</span>
+                  <span>Qui</span>
+                  <span>Sex</span>
+                  <span>Sab</span>
+                  <span>Dom</span>
+              </div>
+              <div class="number-days">
+                  <span class="mes-anterior">30</span>
+                  <span class="mes-anterior">31</span>
+              </div>
+          </div>
+          <button id="novo-evento">Novo evento <ion-icon name="add-circle-outline"></ion-icon></button>
+        </div>
+        <div id="eventos"> 
+        
+          <div class="wraper-evento" id="wraper-reserva">
+            <h4>16/06</h4>
+            <p> <br>Reserva Veículo 003</p>
+          </div>
+          <div class="wraper-evento" id="wraper-mecanica">
+            <h4>20/06</h4>
+            <p> <br>Mecânica Veículo 012</p>
+          </div>
+          <div class="wraper-evento" id="wraper-pagamento">
+            <h4>30/06</h4>
+            <p> <br>Pagamento Posto GasolinaBoa</p>
+          </div>
+          <div class="wraper-evento" id="wraper-pagamento">
+            <h4>31/06</h4>
+            <p> <br>Pagemetnto Mecânica</p>
+          </div>
+          
+        </div>
+      </div>
+      <script>
+        let el = document.querySelector('.number-days');
+        for(let i = 1; i <= 31; i++) {
+            if(i == 15) {
+                el.innerHTML += '<span class="dia-atual">'+i+'</span'
+            } else if(i == 16) {
+              el.innerHTML += '<span class="dia-reserva">'+i+'</span'
+            }
+            else if(i == 20) {
+              el.innerHTML += '<span class="dia-mecanica">'+i+'</span'
+            }
+            else if(i == 30 || i == 31) {
+              el.innerHTML += '<span class="dia-pagamento">'+i+'</span'
+            }
+             else {
+                el.innerHTML += '<span>'+i+'</span'
+            }
+           
+        }
+    </script>
+      <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+</body>
+</html>

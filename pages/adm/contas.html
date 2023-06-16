@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../views/css/contas.css">
+    <link rel="Website Icon" href="../../views/img/logoInteira.png" />
+    <title>Contas- FrotaFácil</title>
+</head>
+<body>
+    <header>
+        <div class="left">
+          <h3>FrotaFácil</h3>
+        </div>
+        <div class="right">
+          <p class="text-right">EMP: PMM</p>
+          <p class="text-right">SECT: IPPLAM</p>
+        </div>
+      </header>
+      <!-- <main> -->
+      <div class="div-pai">
+        <div class="div-filha1">
+          <div class="sidebar">
+            <div class="identificacao-user">
+              <img src="../../views/img/teste_perfil-removebg-preview.png"  id="img-user" />
+              <h2>Adm</h2>
+            </div>
+            <a href="./inicialAdm.html"
+              ><ion-icon name="home-outline"></ion-icon><span>Início</span></a
+            >
+            <a href="./listaReservas.html"
+              ><ion-icon name="navigate-outline"></ion-icon><span>Locações</span></a
+            >
+            <a href="./veiculos.html"
+              ><ion-icon name="car-outline"></ion-icon><span>Veículos</span></a
+            >
+            <a href="./colaboradores.html"
+              ><ion-icon name="people-outline"></ion-icon
+              ><span>Colaboradores</span></a
+            >
+            <a href="#"
+              ><ion-icon name="card-outline"></ion-icon><span>Contas</span></a
+            >
+            <a href="./calendario.html"
+              ><ion-icon name="calendar-outline"></ion-icon
+              ><span>Calendário</span></a
+            >
+            <a href="#"
+              ><ion-icon name="settings-outline"></ion-icon
+              ><span>Configuração</span></a
+            >
+            <a href="../../pages/login.html"
+              ><ion-icon name="log-out-outline"></ion-icon><span>Sair</span></a
+            >
+          </div>
+        </div>
+        <div class="div-filha2">
+          <div id="mapa">
+            <section id="tabela">
+                <h1>Contas</h1>
+                <!-- <label for="">Filtro</label> -->
+                <input
+                  type="text"
+                  name="filtro"
+                  id="filtrar-tabela"
+                  placeholder="Digite o Código da Conta"
+                />
+                <button id="conta" class="botao bto-principal">
+                  Nova Conta
+                </button>
+                <table>
+                  <thead>
+                    <tr>
+                      <th>ID</th>
+                      <th>Código</th>
+                      <th>Descrição</th>
+                      <th>Data</th>
+                      <th>Valor</th>
+                      <th>Veículo</th>
+                      <th>Servidor</th>
+                      <th>Status</th>
+                      <!-- <th>Data revisão</th>
+                      <th>Último Uso</th> -->
+                    </tr>
+                  </thead>
+                  <tbody id="tabela-dadoss">
+                    <tr class="dados">
+                      <td class="info-filtro">001</td>
+                      <td class="info">12503</td>
+                      <td class="info">Gasolina Posto GasolinaBoa </td>
+                      <td class="info">14/05/2023</td>
+                      <td class="info">R$150.00</td>
+                      <td class="info">002</td>
+                      <td class="info">2223</td>
+                      <td class="info">Pago</td>
+                    </tr>
+                    <tr class="dados">
+                      <td class="info-filtro">002</td>
+                      <td class="info">63589</td>
+                      <td class="info">Gasolina Posto GasolinaBoa</td>
+                      <td class="info">15/05/2023</td>
+                      <td class="info">R$100.00</td>
+                      <td class="info">007</td>
+                      <td class="info">1256</td>
+                      <td class="info">Pago</td>
+                    </tr>
+                    <tr class="dados">
+                      <td class="info-filtro">003</td>
+                      <td class="info">45896</td>
+                      <td class="info">Troca de Óleo  Mecânica CarroFeliz</td>
+                      <td class="info">16/06/2023</td>
+                      <td class="info">R$90.00</td>
+                      <td class="info">012</td>
+                      <td class="info">2223</td>
+                      <td class="info">Pago</td>
+                    </tr>
+                    <tr class="dados">
+                      <td class="info-filtro">004</td>
+                      <td class="info">23660</td>
+                      <td class="info-peso">Álcool Posto GasolinaBoa</td>
+                      <td class="info">10/06/2023</td>
+                      <td class="info">R$130.00</td>
+                      <td class="info">005</td>
+                      <td class="info">3689</td>
+                      <td class="info">Pago</td>
+                    </tr>
+                    <tr class="dados" id="fechamento">
+                      <td class="info-filtro">005</td>
+                      <td class="info">45783</td>
+                      <td class="info-peso">Revisão Mecânica CarroFeliz</td>
+                      <td class="info">20/06/2023</td>
+                      <td class="info">R$320.00</td>
+                      <td class="info">001</td>
+                      <td class="info">5896</td>
+                      <td class="info">Fechamento Mês</td>
+                    </tr>
+                    <tr class="dados" id="atraso">
+                      <td class="info-filtro">006</td>
+                      <td class="info">19632</td>
+                      <td class="info-peso">Gasolina Posto GasolinaBoa</td>
+                      <td class="info">14/05/2023</td>
+                      <td class="info">R$150.00</td>
+                      <td class="info">002</td>
+                      <td class="info">2223</td>
+                      <td class="info">Em atraso</td>
+                    </tr>
+    
+                    
+                  </tbody>
+                </table>
+                <span id="erro-ajax" class="invisivel"
+                  >Erro ao buscar os dadoss</span
+                >
+                <button id="btn-imprimir">Imprimir</button>
+              </section>
+        </div>
+      </div>
+      <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="../../script/filtro.js"></script>
+</body>
+</html>

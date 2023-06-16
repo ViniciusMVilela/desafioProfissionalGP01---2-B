@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../views/css/colaboradores.css" />
+    <link rel="Website Icon" href="../../views/img/logoInteira.png" />
+    <title>Colaboradores - FrotaFácil</title>
+  </head>
+  <body>
+    <header>
+      <div class="left">
+        <h3>FrotaFácil</h3>
+      </div>
+      <div class="right">
+        <p class="text-right">EMP: PMM</p>
+        <p class="text-right">SECT: IPPLAM</p>
+      </div>
+    </header>
+    <!-- <main> -->
+    <div class="div-pai">
+      <div class="div-filha1">
+        <div class="sidebar">
+          <div class="identificacao-user">
+            <img
+              src="../../views/img/teste_perfil-removebg-preview.png"
+              id="img-user"
+            />
+            <h2>Adm</h2>
+          </div>
+          <a href="./inicialAdm.html"
+            ><ion-icon name="home-outline"></ion-icon><span>Início</span></a
+          >
+          <a href="./listaReservas.html"
+            ><ion-icon name="navigate-outline"></ion-icon
+            ><span>Locações</span></a
+          >
+          <a href="./veiculos.html"
+            ><ion-icon name="car-outline"></ion-icon><span>Veículos</span></a
+          >
+          <a href="#"
+            ><ion-icon name="people-outline"></ion-icon
+            ><span>Colaboradores</span></a
+          >
+          <a href="./contas.html"
+            ><ion-icon name="card-outline"></ion-icon><span>Contas</span></a
+          >
+          <a href="./calendario.html"
+            ><ion-icon name="calendar-outline"></ion-icon
+            ><span>Calendário</span></a
+          >
+          <a href="#"
+            ><ion-icon name="settings-outline"></ion-icon
+            ><span>Configuração</span></a
+          >
+          <a href="../../pages/login.html"
+            ><ion-icon name="log-out-outline"></ion-icon><span>Sair</span></a
+          >
+        </div>
+      </div>
+      <div class="div-filha2">
+        <div id="mapa">
+          <section id="tabela">
+            <h1>Colaboradores</h1>
+            <!-- <label for="">Filtro</label> -->
+            <input
+              type="text"
+              name="filtro"
+              id="filtrar-tabela"
+              placeholder="Digite a Matrícula"
+            />
+            <table>
+              <thead>
+                <tr>
+                  <th>Matrícula</th>
+                  <th>Nome</th>
+                  <th>CPF</th>
+                  <th>Status</th>
+                  <th>Tipo Colaborador</th>
+                  <th>Data admissão</th>
+                  <th>N° Multas</th>
+                  <th>Checklist em atraso</th>
+                </tr>
+              </thead>
+              <tbody id="tabela-dadoss">
+                <tr class="dados">
+                  <td class="info-filtro">2223</td>
+                  <td class="info">Jóse Augusto</td>
+                  <td class="info">11111111</td>
+                  <td class="info">Trabalhando</td>
+                  <td class="info">01</td>
+                  <td class="info">17/02/2021</td>
+                  <td class="info">00</td>
+                  <td class="info revisao">01</td>
+                </tr>
+                <tr class="dados">
+                  <td class="info-filtro">1256</td>
+                  <td class="info">Felipe Martins</td>
+                  <td class="info">11111111</td>
+                  <td class="info">Trabalhando</td>
+                  <td class="info">01</td>
+                  <td class="info">17/02/2021</td>
+                  <td class="info">00</td>
+                  <td class="info">00</td>
+                </tr>
+                <tr class="dados">
+                  <td class="info-filtro">4589</td>
+                  <td class="info">Maria Carla</td>
+                  <td class="info">11111111</td>
+                  <td class="info">Trabalhando</td>
+                  <td class="info">01</td>
+                  <td class="info">26/09/2021</td>
+                  <td class="info">00</td>
+                  <td class="info revisao">02</td>
+                </tr>
+                <tr class="dados">
+                  <td class="info-filtro">3689</td>
+                  <td class="info">Miguel Andrade</td>
+                  <td class="info">11111111</td>
+                  <td class="info">Férias</td>
+                  <td class="info">01</td>
+                  <td class="info">02/05/2022</td>
+                  <td class="info revisao">02</td>
+                  <td class="info">00</td>
+                </tr>
+                <tr class="dados">
+                  <td class="info-filtro">5896</td>
+                  <td class="info">Marta Rocha</td>
+                  <td class="info">11111111</td>
+                  <td class="info">Trabalhando</td>
+                  <td class="info">01</td>
+                  <td class="info">05/11/2022</td>
+                  <td class="info">00</td>
+                  <td class="info">00</td>
+                </tr>
+              </tbody>
+            </table>
+            <span id="erro-ajax" class="invisivel"
+              >Erro ao buscar os dadoss</span
+            >
+            <!-- <button id="buscar-dados" class="botao bto-principal">
+              Importar
+            </button> -->
+          </section>
+        </div>
+      </div>
+    </div>
+    <!-- </main> -->
+    <script src="../../script/filtro.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

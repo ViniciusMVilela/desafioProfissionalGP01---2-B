@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../views/css/viagem.css">
+    <link rel="Website Icon" href="../../views/img/logoInteira.png" />
+    <title>Cadastrar Viagem - FrotaFácil</title>
+</head>
+<body>
+    <header>
+        <div class="left">
+          <h3>FrotaFácil</h3>
+        </div>
+        <div class="right">
+          <p class="text-right">EMP: PMM</p>
+          <p class="text-right">SECT: IPPLAM</p>
+        </div>
+      </header>
+      <!-- <main> -->
+      <div class="div-pai">
+        <div class="div-filha1">
+          <div class="sidebar">
+            <div class="identificacao-user">
+              <img src="../../views/img/teste_perfil-removebg-preview.png"  id="img-user" />
+              <h2>Adm</h2>
+            </div>
+            <a href="./inicialAdm.html"
+              ><ion-icon name="home-outline"></ion-icon><span>Início</span></a
+            >
+            <a href="./listaReservas.html"
+              ><ion-icon name="navigate-outline"></ion-icon><span>Locações</span></a
+            >
+            <a href="./veiculos.html"
+              ><ion-icon name="car-outline"></ion-icon><span>Veículos</span></a
+            >
+            <a href="./colaboradores.html"
+              ><ion-icon name="people-outline"></ion-icon
+              ><span>Colaboradores</span></a
+            >
+            <a href="./contas.html"
+              ><ion-icon name="card-outline"></ion-icon><span>Contas</span></a
+            >
+            <a href="./calendario.html"
+              ><ion-icon name="calendar-outline"></ion-icon
+              ><span>Calendário</span></a
+            >
+            <a href="#"
+              ><ion-icon name="settings-outline"></ion-icon
+              ><span>Configuração</span></a
+            >
+            <a href="../../pages/login.html"
+              ><ion-icon name="log-out-outline"></ion-icon><span>Sair</span></a
+            >
+          </div>
+        </div>
+        <div class="div-filha2">
+          <div id="mapa">
+            <h1>Cadastrar Viagem</h1>
+            <div class="container_form">
+              <form class="form" action="#" method="post">
+                  
+                  <div class="form_grupo">
+                      <label for="nome" class="form_label">ID Veículo</label>
+                      <input type="text" name="nome" class="form_input" id="nome" placeholder="ID" required>
+                  </div>
+                  
+                  <div class="form_grupo">
+                      <label for="text" class="form_label">Placa Veículo</label>
+                      <input type="text" name="email" class="form_input" id="email" placeholder="Placa" required>
+                  </div>
+                  <div class="form_grupo">
+                      <label for="text" class="form_label">Matrícula Servidor</label>
+                      <input type="text" name="email" class="form_input" id="email" placeholder="Matrícula" required>
+                  </div>
+                  <div class="form_grupo">
+                      <label for="text" class="form_label">Horário</label>
+                      <input type="time" name="email" class="form_input" id="email" placeholder="Placa" required>
+                  </div>
+                  
+                  <div class="form_grupo">
+                      <label for="datanascimento" class="form_label">Data</label>
+                      <input type="date" name="datanascimento" class="form_input" id="datanascimento" placeholder="Data de Nascimento" required>
+                  </div>        
+                      <div class="form_message">
+                          
+                          <label for="message" class="form_message_label">Observações:</label>
+                          <textarea name="mensagem" id="message" cols="30" rows="3" class="form_input message_input" required></textarea>
+  
+                      </div>
+  
+                      <div class="submit">
+  
+                        <input type="hidden" name="acao" value="enviar">
+                      
+                      
+                      </div>
+              </form>
+  
+      </div>
+       <button type="submit" name="Submit" class="submit_btn" >Cadastrar</button>
+        </div>
+      </div>
+      <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+</body>
+</html>
